@@ -10,7 +10,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>586c54ca-3f49-4691-bf76-6c24f8f9f04a</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>
+    </ProjectHome>
     <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <StartupFile>manage.py</StartupFile>
     <SearchPath>
@@ -31,6 +32,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="HelloDjangoApp\admin.py" />
+    <Compile Include="HelloDjangoApp\apps.py" />
+    <Compile Include="HelloDjangoApp\migrations\__init__.py" />
+    <Compile Include="HelloDjangoApp\models.py" />
+    <Compile Include="HelloDjangoApp\tests.py" />
+    <Compile Include="HelloDjangoApp\views.py" />
+    <Compile Include="HelloDjangoApp\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="LearningDjango\__init__.py" />
     <Compile Include="LearningDjango\settings.py" />
@@ -38,9 +46,14 @@
     <Compile Include="LearningDjango\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="HelloDjangoApp\" />
+    <Folder Include="HelloDjangoApp\migrations\" />
+    <Folder Include="HelloDjangoApp\templates\" />
+    <Folder Include="HelloDjangoApp\templates\HelloDjangoApp\" />
     <Folder Include="LearningDjango\" />
   </ItemGroup>
   <ItemGroup>

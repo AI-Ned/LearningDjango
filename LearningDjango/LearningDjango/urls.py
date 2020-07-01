@@ -17,10 +17,15 @@ Including another URLconf
 """
 
 # Uncomment next two lines to enable admin:
-#from django.contrib import admin
-#from django.urls import path
+from django.contrib import admin
+from django.urls import path
+from django.conf.urls import include, url
+import HelloDjangoApp.views
 
 urlpatterns = [
     # Uncomment the next line to enable the admin:
-    #path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+    # Django Processes URL Patterns in the order they appear in the array
+    url(r'^$', HelloDjangoApp.views.index, name='index'),
+    url(r'^home$', HelloDjangoApp.views.index, name='home'),
 ]

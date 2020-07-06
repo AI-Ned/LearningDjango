@@ -25,7 +25,10 @@ import HelloDjangoApp.views
 urlpatterns = [
     # Uncomment the next line to enable the admin:
     path('admin/', admin.site.urls),
+    
+    
     # Django Processes URL Patterns in the order they appear in the array
     url(r'^$', HelloDjangoApp.views.index, name='index'),
     url(r'^home$', HelloDjangoApp.views.index, name='home'),
+    url(r'^about$', HelloDjangoApp.views.about, name='about'),
 ]
